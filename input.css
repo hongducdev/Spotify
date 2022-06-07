@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .scrollbar::-webkit-scrollbar {
+        width: 15px;
+        height: 15px;
+    }
+
+    .scrollbar::-webkit-scrollbar-track {
+        background: #000;
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb {
+        background: #333;
+    }
+
+    .slider-thumb::-webkit-slider-thumb {
+        @apply w-3 h-3 rounded-full appearance-none cursor-pointer bg-login-button-bg;
+    }
+    
+    .slider-thumb::-webkit-slider-thumb:hover {
+        @apply bg-blue-700;
+    }
+
+    .active {
+        @apply fill-[#1db954];
+    }
+}
+
+@layer base {
+    html {
+        font-family: 'Raleway', sans-serif;
+    }
+}
